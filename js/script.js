@@ -1,15 +1,21 @@
 'use sctrict';
 
-let mainHeader = document.getElementsByTagName("h1")[0].getElementsByClassName("total-input");
-let heandlerBtn1 = document.getElementsByClassName("handler_btn")[0].getElementsByClassName("total-input");
-let heandlerBtn2 = document.getElementsByClassName("handler_btn")[1].getElementsByClassName("total-input");
-let screenBtn = document.querySelector(".screen-btn").getElementsByClassName("total-input");
-let otherItemsPercent = document.querySelectorAll(".percent.other-items");
-let otherItemsNumber = document.querySelectorAll(".number.other-items");
-let inputRange = document.querySelector(".rollback>input");
-let span = document.querySelector(".rollback>span");
-let screensBlocks = document.querySelectorAll("screen");
-//let inputs = document.getElementsByClassName("total-input"); 
+let mainHeader = document.getElementsByTagName('h1')[0];
+let heandlerBtn1 = document.getElementsByClassName('handler_btn')[0];
+let heandlerBtn2 = document.getElementsByClassName('handler_btn')[1];
+let screenBtn = document.querySelector('.screen-btn');
+let otherItemsPercent = document.querySelectorAll('.percent.other-items');
+let otherItemsNumber = document.querySelectorAll('.number.other-items');
+let inputRange = document.querySelector('.rollback>input');
+let span = document.querySelector('.rollback>span');
+let screensBlocks = document.querySelectorAll('screen');
+
+let inputs = document.getElementsByClassName('total-input'); 
+let inputTotal = document.getElementsByClassName('total-input')[0];
+let inputTotalCount = document.getElementsByClassName('total-input')[1];
+let inputTotalCountOther = document.getElementsByClassName('total-input')[2];
+let inputTotalFullCount = document.getElementsByClassName('total-input')[3];
+let inputTotalCountRollback = document.getElementsByClassName('total-input')[4];
 
 const appData = {
     title: '',
@@ -109,12 +115,11 @@ const appData = {
 
 //appData.start();
 
-console.log(mainHeader);
-
-
-
-
-
-
+console.log(inputs);
+console.log(inputTotal);
+console.log(inputTotalCount);
+console.log(inputTotalCountOther);
+console.log(inputTotalFullCount);
+console.log(inputTotalCountRollback);
 
 

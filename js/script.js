@@ -1,32 +1,30 @@
 'use strict';
 
-let title = document.querySelector('#title');
+const title = document.querySelector('#title');
+const services = {};
+const fullPrice = 0;
 let adaptive;
-let services = {};
 
-let fullPrice = 0;
+const header = document.getElementsByTagName('h1')[0];
+const startBtn = document.getElementsByClassName('handler_btn')[0];
+const resetBtn = document.getElementsByClassName('handler_btn')[1];
+const plusBtn = document.querySelector('.screen-btn');
 
-let header = document.getElementsByTagName('h1')[0];
-let startBtn = document.getElementsByClassName('handler_btn')[0];
-let resetBtn = document.getElementsByClassName('handler_btn')[1];
-let plusBtn = document.querySelector('.screen-btn');
-
-let otherItemsPercent = document.querySelectorAll('.other-items.percent');
-let otherItemsNumber = document.querySelectorAll('.other-items.number');
-let inputTypeRange = document.querySelector('.rollback>.main-controls__range>input');
-let span = document.querySelector('.rollback>.main-controls__range>span');
+const otherItemsPercent = document.querySelectorAll('.other-items.percent');
+const otherItemsNumber = document.querySelectorAll('.other-items.number');
+const inputTypeRange = document.querySelector('.rollback>.main-controls__range>input');
+const span = document.querySelector('.rollback>.main-controls__range>span');
 
 let inputs = document.getElementsByClassName('total-input');
 let screens = document.querySelectorAll('.screen');
 
-let total = document.getElementsByClassName('total-input')[0];
-let totalCount = document.getElementsByClassName('total-input')[1];
-let totalCountOther = document.getElementsByClassName('total-input')[2];
-let fullTotalCount = document.getElementsByClassName('total-input')[3];
-let totalCountRollback = document.getElementsByClassName('total-input')[4];
-
+const total = document.getElementsByClassName('total-input')[0];
+const totalCount = document.getElementsByClassName('total-input')[1];
+const totalCountOther = document.getElementsByClassName('total-input')[2];
+const fullTotalCount = document.getElementsByClassName('total-input')[3];
+const totalCountRollback = document.getElementsByClassName('total-input')[4];
+const spanRollback = document.querySelector('.range-value');
 let inputRange = document.querySelectorAll('.rollback>.main-controls__range>input')[0];
-let spanRollback = document.querySelector('.range-value');
 
 
 const appData = {
